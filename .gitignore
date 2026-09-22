@@ -1,0 +1,21 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# результаты сборки отчётов
+*.docx
+!docs/**/*.docx
+~$*.docx
+
+.idea/
+.vscode/
+.DS_Store

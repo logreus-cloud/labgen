@@ -1,0 +1,49 @@
+# Конфигурация labgen. Всё, что не указано, берётся из значений по умолчанию (ГОСТ 7.32-2017).
+
+title_page:
+  enabled: true
+  ministry: МИНИСТЕРСТВО НАУКИ И ВЫСШЕГО ОБРАЗОВАНИЯ РОССИЙСКОЙ ФЕДЕРАЦИИ
+  university: Федеральное государственное бюджетное образовательное учреждение высшего образования «Название университета»
+  faculty: Факультет информационных технологий
+  department: Кафедра программной инженерии
+  work_type: ОТЧЁТ
+  work_kind: по лабораторной работе № 1
+  discipline: Базы данных
+  topic: Проектирование схемы данных
+  author:
+    label: 'Выполнил:'
+    name: Иванов И. И.
+    group: ПИ-21
+  supervisor:
+    label: 'Проверил:'
+    position: доцент, к.т.н.
+    name: Петров П. П.
+  city: Москва
+  year: 2026
+
+# Содержание собирается полем Word: откройте документ и нажмите F9.
+toc: true
+
+format:
+  font: Times New Roman
+  size: 14
+  line_spacing: 1.5
+  first_line_indent: 1.25        # абзацный отступ, см
+  margins: {left: 30, right: 15, top: 20, bottom: 20}   # поля страницы, мм
+  page_numbers: true
+  page_number_position: bottom-center   # bottom-center | bottom-right | top-center | top-right
+  section_page_break: true       # каждый раздел (H1) с новой страницы
+  number_headings: true          # автонумерация: 1, 1.1, 1.1.1
+
+  # Заголовки из этого списка не нумеруются
+  unnumbered_headings:
+    - содержание
+    - введение
+    - заключение
+    - список литературы
+    - список использованных источников
+    - приложение
+
+  code: {font: Courier New, size: 12, line_spacing: 1.0}
+  table: {size: 12}
+  captions: {figure: Рисунок, table: Таблица, listing: Листинг, dash: '—'}
